@@ -47,10 +47,10 @@ let array_num = [1,2,3,4,5,6];
 let array_text = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
 let array_mix = [1.5, "a", 10, "b"];
 let array_mul = [
-    {name: "Santiago" ,last_name: "Guevara" , age:17},
-    {name: "Heidy" ,last_name: "Camargo", age:20},
     {name: "Charis" ,last_name: "Conrado", age:18},
-    {name: "Mariana" ,last_name: "Muñoz", age:18}
+    {name: "Pedro" ,last_name: "Acosta", age:18},
+    {name: "Yuyi" ,last_name: "Benavides", age:19},
+    {name: "Oscar" ,last_name: "Becerra", age:19s}
 ]
 
 // Operadores básicas
