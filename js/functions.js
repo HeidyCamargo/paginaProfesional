@@ -24,7 +24,7 @@ document.getElementById("text_two").innerText = "Heidy Camargo";
 Swal.fire({
     icon: 'success',
     title: 'Heidy Camargo',
-    text: 'Ingeniera de sistemas',
+    text: 'Estudiante de UFPSO',
     footer: name,
     showConfirmButton: false,
     timer: 2000,
@@ -47,10 +47,10 @@ let array_num = [1,2,3,4,5,6];
 let array_text = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
 let array_mix = [1.5, "a", 10, "b"];
 let array_mul = [
-    {name: "Pedro" ,last_name: "Acosta" , age:18},
-    {name: "Yuyi" ,last_name: "Benavides", age:19},
+    {name: "Santiago" ,last_name: "Guevara" , age:17},
+    {name: "Heidy" ,last_name: "Camargo", age:20},
     {name: "Charis" ,last_name: "Conrado", age:18},
-    {name: "Oscar" ,last_name: "Becerra", age:19}
+    {name: "Mariana" ,last_name: "Muñoz", age:18}
 ]
 
 // Operadores básicas
@@ -86,8 +86,8 @@ Swal.fire({
     background: '#fff'
 });
 
-//////Operadores lógicos y estructuras condicionales (inverse, incremento y decremento)
-////// AND && con if
+//Operadores lógicos y estructuras condicionales (inverse, incremento y decremento)
+// AND && con if
 var bool    = false;
 var numeric = 5;
 if(!bool && numeric == 5){ // bool == true
@@ -99,7 +99,7 @@ else{
 }
 
 
-////// Or || con if
+// Or || con if
 var age = 31;
 if(age == 31 || numeric == "5"){
     console.log("ingresa if: "+bool);
@@ -113,7 +113,7 @@ console.log(age);
 
 console.log("");
 console.log("FOR");
-//////For
+//For
 console.log(array_text.length);
 for(let i=0; i<array_text.length; i++){
     console.log(array_text[i] + (i+1));
@@ -121,14 +121,15 @@ for(let i=0; i<array_text.length; i++){
 console.log("");
 console.log("WHILE");
 
-////////let j=0;
+// While
+let j=0;
 while(j<array_text.length){
     console.log(array_text[j] + (j+1));
     j++
 }
 console.log("");
 console.log("DO WHILE");
-///////Do While
+//Do While
 let w =0;
 do{
     console.log(array_text[w]);
@@ -136,7 +137,7 @@ do{
 }
 while(w<array_text.length)
 
-//////CREAR FUNCIONES
+//CREAR FUNCIONES
 function load_page(){
     //alert("BIENVENIDO A MI SITIO WEB")
     document.getElementById("nombres").focus();
@@ -159,7 +160,7 @@ btn_clear.addEventListener("click", () => {
 
 function validate(){
     //alert("FUNCIONA");
-    let nombres = document.getElementById("nombres").value; 
+    let nombres = document.getElementById("nombres").value; //Lo último es un atributo, puede ser .id, etc
     console.log(nombres);
     console.log(nombres.length);
     if(nombres.length > 2){
@@ -172,7 +173,7 @@ function limpiar(){
     let nombres = document.getElementById("nombres").value;
 }
 
-//////FORMULARIO DE REGISTRO
+// FORMULARIO DE REGISTRO
 const form_register = document.getElementById("form_register");
 const nombres = document.getElementById("nombres");
 const apellidos = document.getElementById("apellidos");
